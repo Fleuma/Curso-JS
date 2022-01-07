@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+    
+    <style>
+        body{
+            font: normal 15pt Arial
+        }
+        input{
+            width: 140px;
+        }
+        h1{
+            font: normal 20pt Arial black
+        }
+    </style>
+</head>
+<body>
+    <h1>Sua Nacionalidade</h1>
+    <p>Aqui iremos verificar se você é pertencente ao país brasileiro.</p>
+   País onde você está <input type="text" name="pa1" id="pa1">
+   <input type="button" value="Verificar País" onclick= 'verificar()'>
+   <p id= resultado>
+
+   </p>
+   
+
+   <script>
+       function verificar() {
+           var pa = document.getElementById('pa1').value.toLowerCase()
+           var resu = document.getElementById('resultado')
+         resu.innerHTML = `Vivendo em <strong> ${pa}. </strong>`
+           if (pa == 'brasil') {
+             resu.innerHTML += `<p> Você é <strong>Brasileiro!</strong> Foi verificado com sucesso.</p>` 
+          } else {
+              resu.innerHTML += `<p> Você é <strong>Estrangeiro</strong>, por isso foi reprovado. </p>` 
+          } 
+       }
+    </script>
+    
+</body>
+</html>

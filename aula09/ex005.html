@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+<style> body{
+    background-color: black;
+    color: white;
+    font: normal 19pt Arial;
+}
+h1{
+    color: rgb(60, 255, 0);
+    font: normal 20pt Arial;
+}
+    
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id='msg'>Clique em mim</div> <!--- id='msg' foi utilizado para setar o id do div, caso eu queira utilizar getElementbyId() --->
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]//<--- [0] é usado para selecionar qual elemento, devido ao fato de haver mais que 1
+        var d = window.document.getElementById('msg')
+        
+        /* d.style.background = 'green'
+        d.innerText = 'Estou aguardando' --> usado para modificar o texto
+        window.document.getElementById('msg').innerText = 'Olá!' */
+        
+        
+
+    </script>
+    
+</body>
+</html>

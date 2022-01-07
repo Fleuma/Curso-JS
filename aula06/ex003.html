@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Programa</title>
+    <style>
+        body {
+            background-color: rgb(53, 53, 143);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgb(3, 201, 181);
+        }
+     
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo</h1>
+    <p> Já me livrei da maldição XD </p>
+    <script>
+      var n1 = Number(window.prompt('Digite um número'))
+      var n2 = Number(window.prompt('Digite um outro número')) /* Uma característica do comando,  é retornar o dado como string. Fazendo assim que a soma entre os dois valores sejam somados erroneamente */
+      var s = n1 + n2 
+      window.alert('O valor da soma é ' + s) // O + está sendo usado como concatenação, por isso devemos colocar o Number.parseInt ou parseFloat para pegar o número e evitar a string
+    </script>
+</body>
+</html>
